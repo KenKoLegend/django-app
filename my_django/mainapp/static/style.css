@@ -9,3 +9,14 @@ background-color: rgb(26, 26, 26) !important;
 h1 {
     text-align: center ;
 }
+
+.card-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    align-items: center;
+    width: 18rem;
+}

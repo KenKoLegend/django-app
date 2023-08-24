@@ -28,10 +28,10 @@ def main(request):
                 'city': city_name,
                 'description': response['weather'][0]['description'],
                 'icon': response['weather'][0]['icon'],
-                'temperature': 'Temperature: ' + str(response['main']['temp']) + ' °C',
+                'temperature': 'Temperatur: ' + str(response['main']['temp']) + ' °C',
                 'country_code': response['sys']['country'],
-                'wind': 'Wind: ' + str(response['wind']['speed']) + 'km/h',
-                'humidity': 'Humidity: ' + str(response['main']['humidity']) + '%',
+                'wind': 'Windgeschwindigkeit: ' + str(response['wind']['speed']) + 'km/h',
+                'humidity': 'Luftfeuchtigkeit: ' + str(response['main']['humidity']) + '%',
                 'time': formatted_time
             }
         # if the request method is GET empty the dictionary
